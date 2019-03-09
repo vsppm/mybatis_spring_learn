@@ -30,7 +30,8 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <!--spring整合mybatis-spring框架,通过SqlSessionFactoryBean获得SqlSessionFactory类-->
+    <!--spring整合mybatis-spring框架,通过SqlSessionFactoryBean获得SqlSessionFactory类,
+    每一个MyBatis的应用程序都以一个SqlSessionFactory对象的实例为核心,此处相当于把SqlSessionFactory的配置移到此处-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="typeAliasesPackage" value="com.mclean.bean" />
