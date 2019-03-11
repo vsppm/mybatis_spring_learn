@@ -43,5 +43,5 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
     <!-- 检测mappers并让mapper接口自动注入 -->
-    <mybatis:scan base-package="com.mclean.mapper" />
+    <mybatis:scan base-package="com.mclean.dao" />
 </beans>
